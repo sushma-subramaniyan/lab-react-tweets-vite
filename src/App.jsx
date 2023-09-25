@@ -1,4 +1,7 @@
+//import { preprocessCSS } from "vite";
 import "./App.css";
+//import ProfileImage from "./components/ProfileImage";
+//import Tweet from "./components/Tweet";
 import Tweet from "./components/Tweet";
 
 const tweetsArray = [
@@ -40,7 +43,10 @@ const tweetsArray = [
 function App() {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet tweet={tweetsArray[0]}/>
+      <Tweet tweet={tweetsArray[1]}/>
+      <Tweet tweet={tweetsArray[2]}/>
+      
     </div>
   );
 }
